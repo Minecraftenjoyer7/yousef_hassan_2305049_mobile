@@ -1,16 +1,55 @@
-# weatherapp
+1. App Description
 
-A new Flutter project.
+WeatherApp is a mobile application that allows users to:
+- Search for any city
+- View current weather conditions
+- Read detailed weather information such as humidity, wind speed, sunrise/sunset, and more
+- Save favorite cities for quick access
+The app is lightweight, fast, and built with clean UI components to ensure a smooth user experience.
 
-## Getting Started
+------------------------------------------------------------------------------------------------------
+2. Key Features
 
-This project is a starting point for a Flutter application.
+* Live Weather Data
+- Temperature
+- Weather description
+- Weather icon
+- Feels-like temperature
+- Humidity
+- Wind speed
+- Sunrise & sunset time
 
-A few resources to get you started if this is your first Flutter project:
+* Favorites System
+- Add cities to favorites
+- Remove from favorites
+- View favorites anytime
+- Stored using Provider state management
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+* Clean UI
+- Responsive design
+- Simple and modern layout
+- Weather icons fetched from OpenWeatherMap
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+* State Management
+- Implemented using Provider package
+
+----------------------------------------------------------------------------------------------------
+
+4. API Usage
+This project connects to:
+OpenWeatherMap Current Weather API
+Request example:
+https://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_KEY}&units=metric
+
+The API returns:
+- temp
+- feels_like
+- humidity
+- wind
+- sunrise/sunset (UNIX)
+- weather icon
+The app processes the JSON response and displays it in a clean UI.
+-------------------------------------------------------------------------------------------------------------
+
+
+
